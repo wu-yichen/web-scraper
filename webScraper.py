@@ -11,8 +11,8 @@ votes = soup.select('.subtext')
 
 result = []
 for index, item in enumerate(content):
-    text = content[index].getText()
-    href = content[index].get('href', None)
+    text = item.getText()
+    href = item.get('href', None)
     points = votes[index].select('.score')
     if len(points):
         point = int(points[0].getText().replace(' points', ''))
