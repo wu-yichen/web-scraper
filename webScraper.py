@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import pprint
 
-resp = requests.get('https://news.ycombinator.com/news')
+resp = requests.get('https://???')
 
 soup = BeautifulSoup(resp.text, 'html.parser')
 
